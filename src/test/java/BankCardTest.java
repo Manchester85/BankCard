@@ -58,6 +58,6 @@ class BankCardTest {
         form.$("[data-test-id=phone] input").setValue("");
         form.$("[data-test-id=agreement] .checkbox__box").click();
         form.$("[role=button]").click();
-        $("[type=text view=default] input_invalid").shouldHave(Condition.exactText("Поле обязательно для заполнения"));
+        $("[type=tel view=default] input_invalid").shouldHave(Condition.exactText("Поле обязательно для заполнения"));
     }
 }
